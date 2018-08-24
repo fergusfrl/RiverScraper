@@ -1,1 +1,1 @@
-web: gunicorn app:flow-scraper
+web: gunicorn app:app
