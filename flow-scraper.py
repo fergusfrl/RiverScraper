@@ -15,3 +15,7 @@ def getTasman():
 @app.route("/westcoast")
 def getWestCoast():
     return jsonify(westcoast.riverArray)
+
+
+if __name__ == "__main__":
+    app.run()
