@@ -5,15 +5,8 @@
 ## Quick Start
 
 ```bash
-# Install dependencies
-pip install flask
-pip install bs4
-
-# Compile RiverScraper
-export FLASK_APP=flow-scraper.py
-
-# Run RiverScraper
-flask run
+# Run RiverScraper with python 2.7.13
+python app.py
 
 # Server runs on http://localhost:5000
 ```
