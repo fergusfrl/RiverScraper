@@ -1,8 +1,8 @@
 from bs4 import BeautifulSoup
-import urllib
+import urllib2
 
 url = "http://www.tasman.govt.nz/environment/water/rivers/river-flow/stage-river-flow-report/"
-htmlContent = urllib.urlopen(url).read()
+htmlContent = urllib2.urlopen(url).read()
 
 soup = BeautifulSoup(htmlContent, 'html.parser')
 tableRows = soup.find_all('tr')
