@@ -1,8 +1,8 @@
 from bs4 import BeautifulSoup
-from urllib2 import urlopen
+import urllib2
 
 url = "http://data.wcrc.govt.nz/cgi-bin/HydWebServer.cgi"
-htmlContent = urlopen(url).read()
+htmlContent = urllib2.urlopen(url).read()
 
 soup = BeautifulSoup(htmlContent, 'html.parser')
 
